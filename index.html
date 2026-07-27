@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Academy | Premium Digital Admission System & Coaching Institute</title>
+  <meta name="description" content="Apex Academy - Premier Coaching for IIT-JEE, NEET, Foundation & Intermediate (Classes 6 to 12). Smart Classrooms, Top Ranks & Proven Success.">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Main Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       0. CLIENT PRESENTATION PITCH BAR (Client Mode Header)
+       ========================================================================== -->
+  <div class="pitch-bar" id="pitchBar">
+    <div class="pitch-bar-content">
+      <span class="pitch-badge"><i class="fas fa-gem"></i> Client Presentation View</span>
+      <span>Apex Academy Digital Admission & Management Platform</span>
+      <button class="btn-pitch" onclick="openClientPitchModal()">
+        <i class="fas fa-chart-line"></i> View Pitch & ROI Architecture
+      </button>
+      <button class="btn-pitch" style="background:rgba(255,255,255,0.2); color:#FFF;" onclick="openAdminModal()">
+        <i class="fas fa-sliders-h"></i> Admin Portal Preview
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo-brand">
+        <div class="logo-icon">A</div>
+        <div class="logo-text-wrap">
+          <span class="logo-title">APEX ACADEMY</span>
+          <span class="logo-regional">एपेक्स अकादमी • Educational Excellence</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#why-choose" class="nav-link">Why Us</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#faculty" class="nav-link">Faculty</a></li>
+          <li><a href="#methodology" class="nav-link">Methodology</a></li>
+          <li><a href="#results" class="nav-link">Results</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#portals" class="nav-link">Portals</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="btn btn-outline" onclick="openBrochureModal()">
+          <i class="fas fa-file-pdf"></i> Brochure
+        </button>
+        <a href="#quick-admission" class="btn btn-primary">
+          <i class="fas fa-user-plus"></i> Apply Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="admission-badge">
+              <i class="fas fa-bell"></i> Admissions Open 2026-27
+            </span>
+            <div class="google-rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span><strong>4.9/5</strong> (1,250+ Google Reviews)</span>
+            </div>
+          </div>
+
+          <h1 class="hero-headline">
+            Empowering Minds, <span>Engineering Futures.</span>
+          </h1>
+          <p class="hero-tagline">
+            Premier Coaching for IIT-JEE, NEET, Olympiads & Classes 6th–12th. Transform your academic trajectory with expert faculty, small batch focus, and smart classrooms.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#quick-admission" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Book Free Demo Class
+            </a>
+            <button class="btn btn-gold" onclick="openBrochureModal()">
+              <i class="fas fa-download"></i> Download Prospectus
+            </button>
+            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline">
+              <i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp Us
+            </a>
+          </div>
+
+          <div class="quick-contact-pills">
+            <a href="tel:+919876543210" class="contact-pill">
+              <i class="fas fa-phone-alt"></i> +91 98765 43210
+            </a>
+            <div class="contact-pill">
+              <i class="fas fa-map-marker-alt"></i> Apex Towers, Knowledge Corridor
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-container">
+          <div class="hero-main-card">
+            <div class="hero-img-wrap">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Students in Smart Learning Environment">
+              <div class="hero-overlay-badge">
+                <div class="hero-overlay-info">
+                  <h4>Interactive Smart Classrooms</h4>
+                  <p>Digital 3D Concept Visualization & Hybrid Labs</p>
+                </div>
+                <span class="status-badge status-paid">LIVE BATCHES</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-stat-card">
+            <div class="stat-icon-wrap">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div>
+              <div style="font-size:1.1rem; font-weight:800; color:var(--text-primary);">AIR 1 - IIT-JEE</div>
+              <div style="font-size:0.75rem; color:var(--text-secondary);">Apex Student Achievement</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ABOUT ACADEMY SECTION
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-university"></i> About Apex Academy</span>
+        <h2 class="section-title">Built on <span>Excellence, Driven by Results</span></h2>
+        <p class="section-desc">For over 15 years, Apex Academy has been the benchmark of quality education, nurturing young intellects into nation-builders.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-content">
+          <div class="about-tabs-nav">
+            <button class="about-tab-btn active" data-about-target="tab-story">Our Story</button>
+            <button class="about-tab-btn" data-about-target="tab-vision">Vision & Mission</button>
+            <button class="about-tab-btn" data-about-target="tab-philosophy">Teaching Philosophy</button>
+          </div>
+
+          <div class="about-tab-pane" id="tab-story" style="display:block;">
+            <h3 style="font-size:1.5rem; margin-bottom:0.75rem;">A Legacy of Academic Mastery</h3>
+            <p style="color:var(--text-secondary); margin-bottom:1rem;">Founded by visionary educators from top IITs and AIIMS, Apex Academy began with a single vision: to demystify complex science and mathematics through concept-first teaching.</p>
+            <p style="color:var(--text-secondary);">Today, with over 15,000 alumni in top tech and medical institutions worldwide, we continue to innovate educational delivery with personal mentorship.</p>
+          </div>
+
+          <div class="about-tab-pane" id="tab-vision" style="display:none;">
+            <h3 style="font-size:1.5rem; margin-bottom:0.75rem;">Our Vision & Mission</h3>
+            <p style="color:var(--text-secondary); margin-bottom:1rem;"><strong>Vision:</strong> To empower every student with analytical thinking, confidence, and ethics to solve complex global challenges.</p>
+            <p style="color:var(--text-secondary);"><strong>Mission:</strong> Deliver individual attention, zero-gap doubt clearing, and continuous analytics to guarantee student success.</p>
+          </div>
+
+          <div class="about-tab-pane" id="tab-philosophy" style="display:none;">
+            <h3 style="font-size:1.5rem; margin-bottom:0.75rem;">Concept First, Ranks Follow</h3>
+            <p style="color:var(--text-secondary); margin-bottom:1rem;">We reject rote learning. Our methodology breaks down physics, chemistry, biology, and math into foundational visual models so students retain knowledge permanently.</p>
+          </div>
+
+          <div class="director-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Director Photo" class="director-avatar">
+            <div>
+              <p class="director-quote">"Education is not the learning of facts, but the training of the mind to think."</p>
+              <div class="director-name">Dr. Rajesh V. Sharma</div>
+              <div class="director-title">Founder & Managing Director (Ph.D. IIT Bombay)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-gallery-grid">
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Smart Classroom">
+            <span class="about-img-label">Smart Digital Classrooms</span>
+          </div>
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Science Lab">
+            <span class="about-img-label">Physics & Chemistry Lab</span>
+          </div>
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Faculty Mentorship">
+            <span class="about-img-label">1-on-1 Doubt Sessions</span>
+          </div>
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Seminar Hall">
+            <span class="about-img-label">Interactive Seminars</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. WHY CHOOSE OUR ACADEMY (10 Feature Cards)
+       ========================================================================== -->
+  <section class="section" id="why-choose" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-star"></i> Unmatched Quality</span>
+        <h2 class="section-title">Why Choose <span>Apex Academy</span></h2>
+        <p class="section-desc">We combine pedagogical expertise with modern technology to deliver a superior learning experience.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3 class="feature-title">Experienced Faculty</h3>
+          <p class="feature-desc">100% classes conducted by top IITians, Doctors, and Doctorate professors with 10+ years of teaching expertise.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-users"></i></div>
+          <h3 class="feature-title">Small Batch Sizes</h3>
+          <p class="feature-desc">Capped at 30 students per section to guarantee individual attention and continuous interaction.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-user-check"></i></div>
+          <h3 class="feature-title">Personalized Attention</h3>
+          <p class="feature-desc">Dedicated mentor assigned to track individual academic strengths and curate customized improvement roadmaps.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-edit"></i></div>
+          <h3 class="feature-title">Daily Practice Sessions</h3>
+          <p class="feature-desc">Rigorous Daily Practice Problems (DPP) after every session to solidify conceptual mastery.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-vial"></i></div>
+          <h3 class="feature-title">Weekly Tests & CBT</h3>
+          <p class="feature-desc">Bi-weekly Computer Based Tests (CBT) matching actual NTA exam patterns with detailed time analytics.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-question-circle"></i></div>
+          <h3 class="feature-title">Doubt Clarification</h3>
+          <p class="feature-desc">Daily 2-hour dedicated doubt removal counters where students get 1-on-1 solutions from senior faculty.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-desktop"></i></div>
+          <h3 class="feature-title">Smart Classrooms</h3>
+          <p class="feature-desc">4K Interactive Panels, 3D animated lesson visualizations, and recorded lecture archives for review.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-chart-line"></i></div>
+          <h3 class="feature-title">Parent Progress Reports</h3>
+          <p class="feature-desc">Automated SMS, WhatsApp alerts, and monthly parent-teacher conferences with comparative test rank graphs.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-laptop-house"></i></div>
+          <h3 class="feature-title">Online & Offline Hybrid</h3>
+          <p class="feature-desc">Seamless blend of physical classroom lectures with full digital portal access to notes and live streams.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="feature-icon-box"><i class="fas fa-compass"></i></div>
+          <h3 class="feature-title">Career Guidance</h3>
+          <p class="feature-desc">Expert counseling sessions for university selections, stream decisions, and competitive exam application strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. COURSES WE OFFER (Categorized Hub)
+       ========================================================================== -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-book-open"></i> Curated Academic Programs</span>
+        <h2 class="section-title">Courses We <span>Offer</span></h2>
+        <p class="section-desc">Tailored programs designed for School Foundation, Board Excellence, and National Competitive Entrance Exams.</p>
+      </div>
+
+      <div class="course-filters">
+        <button class="filter-btn course-filter-btn active" data-filter="all">All Programs</button>
+        <button class="filter-btn course-filter-btn" data-filter="foundation">Foundation (Classes 6-8)</button>
+        <button class="filter-btn course-filter-btn" data-filter="school">School Coaching (Classes 9-10)</button>
+        <button class="filter-btn course-filter-btn" data-filter="intermediate">Intermediate (MPC/BiPC/MEC)</button>
+        <button class="filter-btn course-filter-btn" data-filter="competitive">Competitive (JEE/NEET)</button>
+        <button class="filter-btn course-filter-btn" data-filter="special">Special Programs</button>
+      </div>
+
+      <div class="courses-grid" id="coursesContainer">
+        <!-- Foundation Card -->
+        <div class="course-card-wrap" data-category="foundation">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag">FOUNDATION PROGRAM</span>
+              <h3 class="course-title">Classes 6th, 7th & 8th</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Building early analytical thinking, logical reasoning, and strong science & math fundamentals.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Maths, Physics, Chemistry, Biology</li>
+                <li><i class="fas fa-check-circle"></i> Olympiad & NTSE Orientation</li>
+                <li><i class="fas fa-check-circle"></i> Mental Ability & Speed Maths</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">1 Year Duration</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('Foundation Program (6-8)', 'Class 6th, 7th & 8th', '₹35,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- School Coaching 9-10 -->
+        <div class="course-card-wrap" data-category="school">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag">BOARD EXCELLENCE</span>
+              <h3 class="course-title">Class 9th & 10th Coaching</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Rigorous preparation for CBSE/ICSE Board exams integrated with early JEE/NEET concepts.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Complete Board Syllabus Coverage</li>
+                <li><i class="fas fa-check-circle"></i> Mock Test Series & Paper Solving</li>
+                <li><i class="fas fa-check-circle"></i> Olympiad & Scholarship Test Training</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">Target 95%+ Boards</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('Class 9-10 School Coaching', 'Class 9th & 10th', '₹45,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate MPC/BiPC -->
+        <div class="course-card-wrap" data-category="intermediate">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag">INTERMEDIATE (11th & 12th)</span>
+              <h3 class="course-title">MPC, BiPC, MEC & CEC</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Comprehensive 2-Year integrated program covering senior secondary state & central board curricula.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Physics, Chem, Math / Botany, Zoology</li>
+                <li><i class="fas fa-check-circle"></i> Board Practical Labs Training</li>
+                <li><i class="fas fa-check-circle"></i> Commerce & Economics Streams</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">Integrated Batch</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('Intermediate Integrated Program', 'Class 11 & 12', '₹65,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- IIT-JEE Competitive -->
+        <div class="course-card-wrap" data-category="competitive">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag" style="color:var(--accent-amber);">NATIONAL ENTRANCE</span>
+              <h3 class="course-title">IIT-JEE (Mains & Advanced)</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">High-intensity problem-solving program for engineering aspirants targeting top IITs and NITs.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Advanced Level Problem Sheets</li>
+                <li><i class="fas fa-check-circle"></i> All India Test Series (AITS)</li>
+                <li><i class="fas fa-check-circle"></i> Previous 20 Years Paper Deconstruction</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">Top Faculty Led</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('IIT-JEE Master Program', 'JEE Mains & Advanced', '₹85,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEET Medical Competitive -->
+        <div class="course-card-wrap" data-category="competitive">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag" style="color:var(--accent-rose);">MEDICAL ENTRANCE</span>
+              <h3 class="course-title">NEET UG Medical Coaching</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Specialized biology-focused coaching for medical aspirants targeting AIIMS, JIPMER & Govt Colleges.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Line-by-Line NCERT Mastery</li>
+                <li><i class="fas fa-check-circle"></i> Daily 100+ Question Solving Drills</li>
+                <li><i class="fas fa-check-circle"></i> High-Yield Biology Visual Charts</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">700+ Score Target</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('NEET Medical Excellence', 'NEET UG Medical', '₹85,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- EAMCET & Olympiads -->
+        <div class="course-card-wrap" data-category="competitive">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag">STATE & NATIONAL</span>
+              <h3 class="course-title">EAMCET, Olympiads & NTSE</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Speed and accuracy coaching engineered for state engineering & science scholarship exams.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> Speed Math & Formula Memory Hacks</li>
+                <li><i class="fas fa-check-circle"></i> National Talent Search Exam Prep</li>
+                <li><i class="fas fa-check-circle"></i> Science Olympiad Stage 1 & 2</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">Rank Guaranteed</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('EAMCET & Olympiad Prep', 'State Entrance', '₹55,000 / Year')">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Programs (Crash Course & Batches) -->
+        <div class="course-card-wrap" data-category="special">
+          <div class="glass-card course-card">
+            <div>
+              <span class="course-category-tag" style="color:var(--accent-purple);">SPECIAL PROGRAMS</span>
+              <h3 class="course-title">Crash Courses & Weekend Batches</h3>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Fast-track 60-day revision modules, betterment exams, supplementary batches & long-term coaching.</p>
+              <ul class="course-features-list">
+                <li><i class="fas fa-check-circle"></i> 60-Day Rapid Syllabus Revision</li>
+                <li><i class="fas fa-check-circle"></i> Weekend Professional Batches</li>
+                <li><i class="fas fa-check-circle"></i> Betterment & Supplementary Prep</li>
+              </ul>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-badge">Flexible Timings</span>
+              <button class="btn btn-outline" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="openCourseDetailModal('Crash Course & Special Batches', 'Short-Term & Long-Term', '₹25,000 / Module')">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. MEET OUR FACULTY
+       ========================================================================== -->
+  <section class="section" id="faculty" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-user-tie"></i> World-Class Educators</span>
+        <h2 class="section-title">Meet Our <span>Expert Faculty</span></h2>
+        <p class="section-desc">Learn directly from veteran professors, IIT alumni, and doctorate scholars committed to your success.</p>
+      </div>
+
+      <div class="faculty-grid">
+        <div class="glass-card faculty-card">
+          <div class="faculty-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Faculty Photo">
+          </div>
+          <h3 class="faculty-name">Prof. K. R. Sharma</h3>
+          <div class="faculty-subject">Senior Physics Lead</div>
+          <div class="faculty-qual">M.Tech IIT Delhi (16+ Yrs Exp)</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Specialist in Mechanics, Electrodynamics & Advanced Problem Solving.</p>
+          <span class="faculty-exp-pill"><i class="fas fa-award"></i> Produced AIR 1 & AIR 4</span>
+        </div>
+
+        <div class="glass-card faculty-card">
+          <div class="faculty-img-wrap">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Faculty Photo">
+          </div>
+          <h3 class="faculty-name">Dr. Ananya Mukherjee</h3>
+          <div class="faculty-subject">Head of Chemistry</div>
+          <div class="faculty-qual">Ph.D. Organic Chem, Gold Medalist</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Renowned for Reaction Mechanism memory hacks & Physical Chem drills.</p>
+          <span class="faculty-exp-pill"><i class="fas fa-award"></i> 14+ Yrs Teaching</span>
+        </div>
+
+        <div class="glass-card faculty-card">
+          <div class="faculty-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80" alt="Faculty Photo">
+          </div>
+          <h3 class="faculty-name">Prof. Vikramaditya Rao</h3>
+          <div class="faculty-subject">Mathematics Wizard</div>
+          <div class="faculty-qual">M.Sc. Maths, IIT Kharagpur</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Master of Calculus, Trigonometry, and 30-second problem shortcuts.</p>
+          <span class="faculty-exp-pill"><i class="fas fa-award"></i> 18+ Yrs JEE Expert</span>
+        </div>
+
+        <div class="glass-card faculty-card">
+          <div class="faculty-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=300&q=80" alt="Faculty Photo">
+          </div>
+          <h3 class="faculty-name">Dr. Priya Sundaram</h3>
+          <div class="faculty-subject">Biology & Zoology Lead</div>
+          <div class="faculty-qual">MBBS, AIIMS New Delhi</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Expert in Human Physiology, Genetics, and 360/360 NEET Biology score strategy.</p>
+          <span class="faculty-exp-pill"><i class="fas fa-award"></i> Medical Mentor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. OUR TEACHING METHODOLOGY (Timeline)
+       ========================================================================== -->
+  <section class="section" id="methodology">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-route"></i> Proven Learning Funnel</span>
+        <h2 class="section-title">Our Teaching <span>Methodology</span></h2>
+        <p class="section-desc">A structured 8-step roadmap engineered to transform foundational learning into top exam ranks.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 01</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Understanding Concepts</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Deconstructing complex theoretical topics through real-world analogies and visual 3D demonstrations.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 02</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Interactive Classroom Learning</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Active Q&A sessions on smart panels where students solve problem variations in real-time.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 03</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Daily Practice (DPP)</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Targeted 15-question daily practice sheets assigned after every class to solidify memory.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 04</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Assignments & Doubt Sessions</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">1-on-1 dedicated faculty counter sessions to resolve individual calculation traps.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 05</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Weekly Computer Tests</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Exams conducted under exact NTA exam timer interface to build speed and accuracy.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 06</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">AI Performance Analysis</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Detailed report identifying subject weakness, time spent per question, and negative mark traps.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 07</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Parent Feedback & Review</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Direct updates sent to parents via portal with monthly face-to-face progress reviews.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="step-num">Step 08</span>
+            <h3 style="font-size:1.2rem; margin-bottom:0.4rem;">Rank Improvement & Mastery</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">Continuous rank escalation ensuring top selection in IIT, NEET & Board Exams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. STUDENT RESULTS & TOPPERS
+       ========================================================================== -->
+  <section class="section" id="results" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-chart-pie"></i> Proven Success Track Record</span>
+        <h2 class="section-title">Student <span>Results & Achievements</span></h2>
+        <p class="section-desc">Our statistics speak for themselves. Year after year, Apex students secure top national ranks.</p>
+      </div>
+
+      <div class="stats-banner">
+        <div>
+          <div class="stat-number" data-target="15000" data-suffix="+">0</div>
+          <div class="stat-label">Students Trained</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="1" data-suffix=" (AIR)">0</div>
+          <div class="stat-label">Top National Ranks</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="99.4" data-suffix="%">0</div>
+          <div class="stat-label">Pass Percentage</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="4.9" data-suffix="/5">0</div>
+          <div class="stat-label">Google Rating</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="15" data-suffix="+ Yrs">0</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+      </div>
+
+      <h3 style="text-align:center; font-size:1.8rem; margin-bottom:2rem;">Star Performers (2025-26)</h3>
+
+      <div class="toppers-grid">
+        <div class="glass-card topper-card">
+          <span class="rank-badge">AIR 1 - IIT JEE</span>
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Topper" class="topper-img">
+          <h4 style="font-weight:700;">Rohan Agarwal</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">IIT-JEE Advanced 2025</p>
+          <div class="topper-score">Score: 348 / 360</div>
+          <span style="font-size:0.8rem; color:var(--accent-cyan);">Placed: IIT Bombay (CS)</span>
+        </div>
+
+        <div class="glass-card topper-card">
+          <span class="rank-badge">AIR 4 - NEET UG</span>
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Topper" class="topper-img">
+          <h4 style="font-weight:700;">Sneha Reddy</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">NEET Medical 2025</p>
+          <div class="topper-score">Score: 715 / 720</div>
+          <span style="font-size:0.8rem; color:var(--accent-cyan);">Placed: AIIMS New Delhi</span>
+        </div>
+
+        <div class="glass-card topper-card">
+          <span class="rank-badge">AIR 12 - EAMCET</span>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Topper" class="topper-img">
+          <h4 style="font-weight:700;">Aditya Verma</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">State EAMCET 2025</p>
+          <div class="topper-score">Rank 12 State Top</div>
+          <span style="font-size:0.8rem; color:var(--accent-cyan);">Placed: JNTU Campus</span>
+        </div>
+
+        <div class="glass-card topper-card">
+          <span class="rank-badge">99.8% - Class 10</span>
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Topper" class="topper-img">
+          <h4 style="font-weight:700;">Kavya Sharma</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">CBSE Board 10th</p>
+          <div class="topper-score">State City Topper</div>
+          <span style="font-size:0.8rem; color:var(--accent-cyan);">Awarded Gold Medal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. SUCCESS STORIES & VIDEO TESTIMONIALS
+       ========================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-quote-left"></i> Authentic Feedback</span>
+        <h2 class="section-title">Success <span>Stories & Testimonials</span></h2>
+        <p class="section-desc">Hear directly from parents and top-ranking students about their transformation journey with us.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="video-thumb-card" onclick="openVideoModal('Rohan Agarwal', 'AIR 1 IIT-JEE')">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Video Review Thumbnail">
+          <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+          <div class="video-info-overlay">
+            <h4 style="font-size:1.1rem; color:#FFF;">"How I Cracked IIT-JEE AIR 1"</h4>
+            <p style="font-size:0.8rem; color:var(--accent-cyan);">Rohan Agarwal (Student Video Review)</p>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div style="color:var(--accent-amber); font-size:1.2rem; margin-bottom:0.75rem;">⭐⭐⭐⭐⭐</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary); margin-bottom:1.25rem; font-style:italic;">
+            "Sending my daughter Sneha to Apex Academy was the best decision. The faculty daily doubt sessions and parent progress reports gave us total transparency."
+          </p>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Parent Avatar" style="width:48px; height:48px; border-radius:50%; object-fit:cover;">
+            <div>
+              <h4 style="font-size:0.95rem;">Mrs. Radhika Reddy</h4>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Parent of Sneha (AIR 4 NEET)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-thumb-card" onclick="openVideoModal('Sneha Reddy', 'AIR 4 NEET UG')">
+          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=600&q=80" alt="Video Review Thumbnail">
+          <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+          <div class="video-info-overlay">
+            <h4 style="font-size:1.1rem; color:#FFF;">"Biology NCERT Hacks for 715 Score"</h4>
+            <p style="font-size:0.8rem; color:var(--accent-cyan);">Sneha Reddy (Student Video Review)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. GALLERY ALBUMS (With Lightbox)
+       ========================================================================== -->
+  <section class="section" id="gallery" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-camera"></i> Life At Apex</span>
+        <h2 class="section-title">Academy <span>Campus Gallery</span></h2>
+        <p class="section-desc">Explore photos of our modern infrastructure, events, awards, seminars, and daily student life.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn gallery-filter-btn active" data-gallery="all">All Albums</button>
+        <button class="filter-btn gallery-filter-btn" data-gallery="classrooms">Classrooms</button>
+        <button class="filter-btn gallery-filter-btn" data-gallery="faculty">Faculty</button>
+        <button class="filter-btn gallery-filter-btn" data-gallery="students">Students</button>
+        <button class="filter-btn gallery-filter-btn" data-gallery="events">Seminars & Events</button>
+        <button class="filter-btn gallery-filter-btn" data-gallery="awards">Awards & Results Day</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item-wrap" data-category="classrooms">
+          <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80', 'Smart Classroom Studio', 'State-of-the-art interactive display boards and comfortable ergonomic seating.')">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Classroom">
+            <div class="gallery-overlay">
+              <h4 style="color:#FFF;">Smart Classroom Studio</h4>
+              <span style="font-size:0.8rem; color:var(--accent-cyan);">Click to view full picture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrap" data-category="faculty">
+          <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80', 'Faculty Discussion Room', 'Senior faculty collaborating on weekly test series questions.')">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Faculty">
+            <div class="gallery-overlay">
+              <h4 style="color:#FFF;">Faculty Roster Meeting</h4>
+              <span style="font-size:0.8rem; color:var(--accent-cyan);">Click to view full picture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrap" data-category="students">
+          <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80', 'Group Study & Mentorship', 'Students engaged in group problem-solving sessions.')">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Students">
+            <div class="gallery-overlay">
+              <h4 style="color:#FFF;">Group Study Session</h4>
+              <span style="font-size:0.8rem; color:var(--accent-cyan);">Click to view full picture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrap" data-category="events">
+          <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80', 'Annual Motivation Seminar', 'Keynote address by guest IIT professor on exam psychology.')">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Seminar">
+            <div class="gallery-overlay">
+              <h4 style="color:#FFF;">Annual Motivation Seminar</h4>
+              <span style="font-size:0.8rem; color:var(--accent-cyan);">Click to view full picture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item-wrap" data-category="awards">
+          <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1000&q=80', 'Felicitation & Results Day', 'Honoring AIR 1 & AIR 4 rankers with cash scholarships.')">
+            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=600&q=80" alt="Awards Day">
+            <div class="gallery-overlay">
+              <h4 style="color:#FFF;">Felicitation Ceremony</h4>
+              <span style="font-size:0.8rem; color:var(--accent-cyan);">Click to view full picture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. ADMISSION PROCESS TIMELINE
+       ========================================================================== -->
+  <section class="section" id="admission-process">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-clipboard-list"></i> Simple 7-Step Journey</span>
+        <h2 class="section-title">Visual <span>Admission Process</span></h2>
+        <p class="section-desc">From initial inquiry to day one of classes, our seamless onboarding gets students ready fast.</p>
+      </div>
+
+      <div class="process-steps-grid">
+        <div class="process-card">
+          <div class="process-step-num">1</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Enquiry</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Fill online form or call counselors</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">2</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Counselling</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Academic assessment & stream advice</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">3</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Demo Class</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Attend 2 free interactive trial sessions</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">4</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Admission</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Submit docs & scholarship test score</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">5</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Fee Payment</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Easy online/offline installment options</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">6</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Welcome Kit</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Receive books, uniform & portal login</p>
+        </div>
+        <div class="process-card">
+          <div class="process-step-num">7</div>
+          <h4 style="font-size:1.05rem; margin-bottom:0.5rem;">Classes Begin</h4>
+          <p style="font-size:0.8rem; color:var(--text-secondary);">Start your journey to top ranks!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11 & 12. INTERACTIVE STUDENT & PARENT PORTALS
+       ========================================================================== -->
+  <section class="section" id="portals" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-user-shield"></i> Digital Ecosystem</span>
+        <h2 class="section-title">Student & Parent <span>Portals</span></h2>
+        <p class="section-desc">Experience our interactive demonstration portal for 24/7 academic tracking, attendance, homework, and fee management.</p>
+      </div>
+
+      <div class="portal-preview-wrapper">
+        <div class="portal-tabs-header">
+          <button class="portal-tab-btn active" data-portal="student-portal-view">
+            <i class="fas fa-user-graduate"></i> Student Portal Dashboard
+          </button>
+          <button class="portal-tab-btn" data-portal="parent-portal-view">
+            <i class="fas fa-users-cog"></i> Parent Tracking Portal
+          </button>
+        </div>
+
+        <!-- Student Portal View -->
+        <div class="portal-content-body portal-view-content" id="student-portal-view" style="display:block;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <h3 style="font-size:1.4rem;">Welcome Back, Rohan Agarwal 👋</h3>
+              <p style="font-size:0.85rem; color:var(--text-secondary);">Batch: IIT-JEE Super 30 | Roll No: APEX-2026-042</p>
+            </div>
+            <span class="status-badge status-paid"><i class="fas fa-circle" style="font-size:0.6rem;"></i> ACTIVE ONLINE SESSION</span>
+          </div>
+
+          <div class="portal-stats-row">
+            <div class="portal-widget">
+              <div class="portal-widget-title">Overall Attendance</div>
+              <div class="portal-widget-val">96.8%</div>
+              <span style="font-size:0.75rem; color:#10B981;">31 / 32 Days Attended</span>
+            </div>
+            <div class="portal-widget">
+              <div class="portal-widget-title">Latest CBT Rank</div>
+              <div class="portal-widget-val">AIR 1</div>
+              <span style="font-size:0.75rem; color:var(--accent-cyan);">Score: 348/360 Marks</span>
+            </div>
+            <div class="portal-widget">
+              <div class="portal-widget-title">Homework Pending</div>
+              <div class="portal-widget-val" style="color:var(--accent-amber);">1 Task</div>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Due Tonight at 9:00 PM</span>
+            </div>
+            <div class="portal-widget">
+              <div class="portal-widget-title">Fee Status</div>
+              <div class="portal-widget-val" style="color:#10B981;">PAID</div>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Receipt #8942-B</span>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom:1rem; color:var(--text-primary);">Upcoming Schedule & Downloadable Study Material</h4>
+          <table class="portal-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Topic / Assignment</th>
+                <th>Instructor</th>
+                <th>Status / Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Physics</strong></td>
+                <td>Rotational Motion - Advanced DPP 04</td>
+                <td>Prof. K. R. Sharma</td>
+                <td><button class="btn btn-outline" style="padding:0.25rem 0.6rem; font-size:0.75rem;" onclick="showToast('📥 Downloaded Physics_DPP_04.pdf')">Download PDF</button></td>
+              </tr>
+              <tr>
+                <td><strong>Organic Chemistry</strong></td>
+                <td>Reaction Mechanisms Worksheets</td>
+                <td>Dr. Ananya Mukherjee</td>
+                <td><button class="btn btn-outline" style="padding:0.25rem 0.6rem; font-size:0.75rem;" onclick="showToast('📥 Downloaded Organic_Chem_Notes.pdf')">Download PDF</button></td>
+              </tr>
+              <tr>
+                <td><strong>Mathematics</strong></td>
+                <td>Integral Calculus CBT Mock Test 06</td>
+                <td>Prof. V. Rao</td>
+                <td><span class="status-badge status-paid">COMPLETED</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Parent Portal View -->
+        <div class="portal-content-body portal-view-content" id="parent-portal-view" style="display:none;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <h3 style="font-size:1.4rem;">Parent Overview: Ward - Rohan Agarwal</h3>
+              <p style="font-size:0.85rem; color:var(--text-secondary);">Linked Parent Mobile: +91 98765 *****</p>
+            </div>
+            <button class="btn btn-primary" style="padding:0.4rem 0.9rem; font-size:0.85rem;" onclick="showToast('💳 Redirecting to Secured Fee Payment Gateway Simulator...')">
+              <i class="fas fa-credit-card"></i> Pay Term 2 Fee Online
+            </button>
+          </div>
+
+          <div class="portal-stats-row">
+            <div class="portal-widget">
+              <div class="portal-widget-title">Monthly Progress Meter</div>
+              <div class="portal-widget-val">98.5%</div>
+              <span style="font-size:0.75rem; color:#10B981;">Top 1% Percentile in Batch</span>
+            </div>
+            <div class="portal-widget">
+              <div class="portal-widget-title">Parent Alerts Sent</div>
+              <div class="portal-widget-val">12 Alerts</div>
+              <span style="font-size:0.75rem; color:var(--accent-cyan);">WhatsApp & SMS Verified</span>
+            </div>
+            <div class="portal-widget">
+              <div class="portal-widget-title">Faculty Interaction</div>
+              <div class="portal-widget-val" style="color:#10B981;">Booked</div>
+              <span style="font-size:0.75rem; color:var(--text-muted);">PNT Meeting on Saturday</span>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom:1rem;">Direct Faculty Communication Channel</h4>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <input type="text" class="form-control" style="flex:1;" placeholder="Send private message to Director / Faculty Mentor..." id="parentMsgInput">
+            <button class="btn btn-gold" onclick="if(document.getElementById('parentMsgInput').value){ showToast('✉ Message sent to Director Dr. Sharma'); document.getElementById('parentMsgInput').value=''; }">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-question-circle"></i> Instant Clarifications</span>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-desc">Have questions? Find quick answers about our batches, demo classes, fee options, and hostel facilities.</p>
+      </div>
+
+      <div class="faq-search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="faqSearchInput" placeholder="Search questions (e.g. demo classes, online, hostel, fees)...">
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which classes and streams do you teach at Apex Academy?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            We offer foundation courses for Classes 6th to 8th, board coaching for Classes 9th & 10th, Intermediate 11th & 12th (MPC, BiPC, MEC, CEC), and competitive exam coaching for IIT-JEE, NEET UG, EAMCET, Olympiads & NTSE.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are free demo classes available before taking admission?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Yes! We provide 2 days of free demo classroom sessions so students and parents can evaluate our teaching methodology, smart classroom technology, and faculty interactions.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you provide both online and offline classes?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Yes, we operate a hybrid model. Students can attend physical classes on campus or stream live HD classroom lectures with real-time digital chat doubt resolution via our mobile & web portal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is hostel and transport facility available for outstation students?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Yes, we have separate air-conditioned hostels for boys and girls with 24/7 security, nutritious meals, study wardens, and dedicated bus transportation routes covering the entire city.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How are weekly tests and performance analysis conducted?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Tests are held every weekend on our Computer Based Testing (CBT) portal. AI analytics generate instantaneous reports highlighting time spent per question, accuracy rate, and national rank standings.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are scholarship options available for merit students?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            We conduct the Apex National Talent Scholarship Exam (ANTSE). Meritorious students can earn up to 100% tuition fee waivers based on their performance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       14. CONTACT US & CAMPUS LOCATION
+       ========================================================================== -->
+  <section class="section" id="contact" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-map-marked-alt"></i> Get In Touch</span>
+        <h2 class="section-title">Visit Our <span>Campus</span></h2>
+        <p class="section-desc">Our academic counselors are available 7 days a week to guide you through course selections.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card">
+          <h3 style="font-size:1.5rem; margin-bottom:1.5rem;">Contact Information</h3>
+
+          <div style="display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2rem;">
+            <div style="display:flex; gap:1rem; align-items:flex-start;">
+              <i class="fas fa-building" style="color:var(--accent-cyan); font-size:1.2rem; margin-top:0.2rem;"></i>
+              <div>
+                <strong>Main Campus Address:</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">Apex Towers, Plot 42, Knowledge Corridor, Near Metro Station, Central City - 500081.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <i class="fas fa-phone-alt" style="color:var(--accent-cyan); font-size:1.2rem;"></i>
+              <div>
+                <strong>Admissions Helpline:</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">+91 98765 43210 / +91 98765 43211</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <i class="fab fa-whatsapp" style="color:#25D366; font-size:1.3rem;"></i>
+              <div>
+                <strong>WhatsApp Support:</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">+91 98765 43210 (Instant Chat)</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <i class="fas fa-envelope" style="color:var(--accent-cyan); font-size:1.2rem;"></i>
+              <div>
+                <strong>Email Address:</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">admissions@apexacademy.edu</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <i class="fas fa-clock" style="color:var(--accent-amber); font-size:1.2rem;"></i>
+              <div>
+                <strong>Working Hours:</strong>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">Monday – Sunday: 8:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem;">
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline" style="padding:0.5rem 1rem;"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://facebook.com" target="_blank" class="btn btn-outline" style="padding:0.5rem 1rem;"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://youtube.com" target="_blank" class="btn btn-outline" style="padding:0.5rem 1rem;"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.497509893457!2d78.382672!3d17.436329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI2JzEwLjgiTiA3OMKwMjInNTcuNiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             15. QUICK ADMISSION FORM
+             ========================================================================== -->
+        <div class="glass-card" id="quick-admission">
+          <span class="course-category-tag" style="color:var(--accent-amber);"><i class="fas fa-bolt"></i> FAST LEAD REGISTRATION</span>
+          <h3 style="font-size:1.8rem; margin-bottom:0.5rem;">Book Free Demo Class</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.5rem;">Fill out this form to reserve a free seat for 2 days demo class and receive instant course guidance.</p>
+
+          <form id="quickAdmissionForm">
+            <div class="form-group">
+              <label for="formStudentName">Student Name *</label>
+              <input type="text" id="formStudentName" class="form-control" placeholder="Enter student's full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formParentName">Parent / Guardian Name *</label>
+              <input type="text" id="formParentName" class="form-control" placeholder="Enter parent's full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formMobile">Mobile Number *</label>
+              <input type="tel" id="formMobile" class="form-control" placeholder="Enter 10-digit mobile number" required>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="formClassSelect">Class Target *</label>
+                <select id="formClassSelect" class="form-control" required>
+                  <option value="">Select Class</option>
+                  <option value="Class 6th">Class 6th</option>
+                  <option value="Class 7th">Class 7th</option>
+                  <option value="Class 8th">Class 8th</option>
+                  <option value="Class 9th">Class 9th</option>
+                  <option value="Class 10th">Class 10th</option>
+                  <option value="Class 11th (MPC)">Class 11th (MPC)</option>
+                  <option value="Class 11th (BiPC)">Class 11th (BiPC)</option>
+                  <option value="Class 12th">Class 12th</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formCourseSelect">Target Exam / Stream *</label>
+                <select id="formCourseSelect" class="form-control" required>
+                  <option value="">Select Target</option>
+                  <option value="IIT-JEE (Mains & Adv)">IIT-JEE (Mains & Adv)</option>
+                  <option value="NEET Medical">NEET Medical</option>
+                  <option value="EAMCET">EAMCET</option>
+                  <option value="Foundation & Olympiad">Foundation & Olympiad</option>
+                  <option value="Board Exams">Board Exams</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formSchoolName">Current School Name</label>
+              <input type="text" id="formSchoolName" class="form-control" placeholder="Enter current school name">
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage">Additional Requirements / Questions</label>
+              <textarea id="formMessage" class="form-control" rows="3" placeholder="Tell us if hostel or transport is required..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.05rem; padding:1rem;">
+              <i class="fas fa-calendar-check"></i> Book Free Demo Class Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo-brand">
+            <div class="logo-icon">A</div>
+            <div class="logo-text-wrap">
+              <span class="logo-title">APEX ACADEMY</span>
+              <span class="logo-regional">एपेक्स अकादमी • Educational Excellence</span>
+            </div>
+          </a>
+          <p>Transforming aspirations into achievements through disciplined coaching, smart learning, and relentless student support.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses Offered</a></li>
+            <li><a href="#faculty">Meet Faculty</a></li>
+            <li><a href="#methodology">Teaching Methodology</a></li>
+            <li><a href="#results">Results & Ranks</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Student & Parents</h4>
+          <ul class="footer-links">
+            <li><a href="#portals">Student Portal</a></li>
+            <li><a href="#portals">Parent Portal</a></li>
+            <li><a href="#" onclick="openBrochureModal()">Download Prospectus</a></li>
+            <li><a href="#admission-process">Admission Roadmap</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admissions Office</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">Apex Towers, Knowledge Corridor, Central City.</p>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Phone: +91 98765 43210</p>
+          <button class="btn btn-gold" style="width:100%; font-size:0.85rem;" onclick="openBrochureModal()">
+            <i class="fas fa-file-pdf"></i> Download Prospectus
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Apex Academy. All Rights Reserved. Designed for Client Presentation & Digital Admissions.</span>
+        <div>
+          <a href="#" style="margin-right:1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & FLOATING WIDGETS
+       ========================================================================== -->
+  <!-- Reusable Generic Modal Overlay -->
+  <div class="modal-overlay" id="genericModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div id="modalBodyContent">
+        <!-- Content dynamically injected by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Action Buttons -->
+  <div class="floating-widgets">
+    <a href="https://wa.me/919876543210" target="_blank" class="widget-btn widget-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919876543210" class="widget-btn widget-call" title="Call Counselor">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
