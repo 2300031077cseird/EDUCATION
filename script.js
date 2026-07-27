@@ -1,5 +1,6 @@
 /* ==========================================================================
    PREMIUM ACADEMY - INTERACTIVE LOGIC & ENGINE
+   Default Light Theme with Dark Mode Toggle Capability
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,23 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* --------------------------------------------------------------------------
-   1. Theme Switcher (Dark / Light Mode)
+   1. Theme Switcher (Light / Dark Mode - Default: Light)
    -------------------------------------------------------------------------- */
 function initThemeToggle() {
   const themeBtn = document.getElementById('themeToggle');
   if (!themeBtn) return;
 
-  const currentTheme = localStorage.getItem('academy-theme') || 'dark';
+  const currentTheme = localStorage.getItem('academy-theme') || 'light';
   document.documentElement.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
   themeBtn.addEventListener('click', () => {
     const activeTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+    const newTheme = activeTheme === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('academy-theme', newTheme);
     updateThemeIcon(newTheme);
-    showToast(`Switched to ${newTheme.toUpperCase()} mode!`);
+    showToast(`Switched to ${newTheme.toUpperCase()} theme!`);
   });
 }
 
@@ -101,7 +102,7 @@ function openLightbox(imgSrc, title, desc) {
 
   modalBody.innerHTML = `
     <div style="text-align: center;">
-      <img src="${imgSrc}" style="width:100%; max-height:450px; object-fit:cover; border-radius:14px; margin-bottom:1.25rem; border:1px solid rgba(255,255,255,0.1);">
+      <img src="${imgSrc}" style="width:100%; max-height:450px; object-fit:cover; border-radius:14px; margin-bottom:1.25rem; border:1px solid rgba(0,0,0,0.1);">
       <h3 style="font-size:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);">${title}</h3>
       <p style="color:var(--text-secondary); font-size:0.95rem;">${desc}</p>
     </div>
@@ -164,20 +165,6 @@ function initPortalTabs() {
   });
 }
 
-function switchStudentSubTab(tabName) {
-  const subBtns = document.querySelectorAll('.student-subtab-btn');
-  const subPanels = document.querySelectorAll('.student-subpanel');
-
-  subBtns.forEach(b => b.classList.remove('active'));
-  subPanels.forEach(p => p.style.display = 'none');
-
-  const activeBtn = Array.from(subBtns).find(b => b.getAttribute('data-subtab') === tabName);
-  if (activeBtn) activeBtn.classList.add('active');
-
-  const panel = document.getElementById(`student-panel-${tabName}`);
-  if (panel) panel.style.display = 'block';
-}
-
 /* --------------------------------------------------------------------------
    6. About Section Tabs
    -------------------------------------------------------------------------- */
@@ -233,7 +220,7 @@ function initCounterAnimations() {
     });
   }, { threshold: 0.5 });
 
-  const statsSection = document.getElementById('results-section');
+  const statsSection = document.getElementById('results');
   if (statsSection) observer.observe(statsSection);
 }
 
@@ -292,28 +279,28 @@ function openClientPitchModal() {
   modalBody.innerHTML = `
     <div style="padding: 0.5rem;">
       <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
-        <span style="background:rgba(99,102,241,0.2); color:#818CF8; padding:0.3rem 0.8rem; border-radius:6px; font-weight:700; font-size:0.8rem;">CLIENT PRESENTATION PITCH</span>
+        <span style="background:rgba(2,132,199,0.1); color:var(--accent-cyan); padding:0.3rem 0.8rem; border-radius:6px; font-weight:700; font-size:0.8rem;">CLIENT PRESENTATION PITCH</span>
         <span style="color:var(--accent-cyan); font-weight:600; font-size:0.85rem;">Digital Admission System Architecture</span>
       </div>
       <h2 style="font-size:1.8rem; margin-bottom:1rem; color:var(--text-primary);">Why This Web Application Transforms Student Enrollment</h2>
       <p style="color:var(--text-secondary); margin-bottom:1.5rem;">When presenting to an academy director or board, emphasize that this platform is not a static website—it is an integrated <strong>Digital Admission Pipeline & Engagement Engine</strong>.</p>
       
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
-        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
           <h4 style="color:var(--accent-cyan); margin-bottom:0.5rem;"><i class="fas fa-shield-alt"></i> 1. Instant Trust & Proof</h4>
           <p style="font-size:0.85rem; color:var(--text-secondary);">Direct faculty credentials, verified Google reviews, topper statistics, and video testimonials immediately address parent concerns.</p>
         </div>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
           <h4 style="color:var(--accent-amber); margin-bottom:0.5rem;"><i class="fas fa-bullseye"></i> 2. High Lead Capture</h4>
           <p style="font-size:0.85rem; color:var(--text-secondary);">Sticky "Book Free Demo Class" CTAs, WhatsApp quick chat, and brochure downloads capture high-intent student leads 24/7.</p>
         </div>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
           <h4 style="color:var(--accent-blue); margin-bottom:0.5rem;"><i class="fas fa-user-graduate"></i> 3. Parent & Student Retention</h4>
           <p style="font-size:0.85rem; color:var(--text-secondary);">Interactive portals for real-time attendance, test score analytics, homework downloads, and fee payment reduce churn.</p>
         </div>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:12px;">
           <h4 style="color:var(--accent-purple); margin-bottom:0.5rem;"><i class="fas fa-chart-line"></i> 4. Scalable Brand Value</h4>
-          <p style="font-size:0.85rem; color:var(--text-secondary);">Lightning-fast glassmorphism design system positions the academy as the #1 premium educational choice in the region.</p>
+          <p style="font-size:0.85rem; color:var(--text-secondary);">Lightning-fast clean design system positions the academy as the #1 premium educational choice in the region.</p>
         </div>
       </div>
       <button class="btn btn-primary" style="width:100%;" onclick="closeModal()">Proceed with Live Presentation</button>
@@ -329,13 +316,13 @@ function openBrochureModal() {
 
   modalBody.innerHTML = `
     <div style="text-align:center;">
-      <div style="width:60px; height:60px; background:rgba(0,245,212,0.15); color:var(--accent-cyan); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin:0 auto 1rem auto;">
+      <div style="width:60px; height:60px; background:rgba(2,132,199,0.1); color:var(--accent-cyan); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin:0 auto 1rem auto;">
         <i class="fas fa-file-pdf"></i>
       </div>
       <h3 style="font-size:1.6rem; margin-bottom:0.5rem;">Apex Academy Prospectus 2026-27</h3>
       <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.95rem;">Comprehensive guide including Course Syllabus, Fee Structure, Faculty Directory & Scholarship Test Details.</p>
       
-      <div style="background:var(--bg-glass); border:1px solid var(--border-color); padding:1rem; border-radius:12px; margin-bottom:1.5rem; text-align:left;">
+      <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:12px; margin-bottom:1.5rem; text-align:left;">
         <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.5rem;">
           <span>File Name:</span> <strong>Apex_Academy_Brochure_2026.pdf</strong>
         </div>
@@ -375,12 +362,12 @@ function openCourseDetailModal(courseName, classTarget, feeRange) {
         <li><i class="fas fa-check" style="color:var(--accent-cyan);"></i> Complete physical study kit & mobile portal access.</li>
       </ul>
       
-      <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.04); padding:1rem; border-radius:12px; border:1px solid var(--border-color); margin-bottom:1.5rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; background:#F8FAFC; padding:1rem; border-radius:12px; border:1px solid var(--border-color); margin-bottom:1.5rem;">
         <div>
           <span style="font-size:0.8rem; color:var(--text-secondary);">Course Fee Investment:</span>
           <div style="font-size:1.25rem; font-weight:800; color:var(--accent-amber);">${feeRange}</div>
         </div>
-        <span style="background:rgba(16,185,129,0.15); color:#10B981; padding:0.3rem 0.75rem; border-radius:20px; font-weight:700; font-size:0.8rem;">Scholarships Available</span>
+        <span style="background:rgba(5,150,105,0.12); color:#059669; padding:0.3rem 0.75rem; border-radius:20px; font-weight:700; font-size:0.8rem;">Scholarships Available</span>
       </div>
       
       <button class="btn btn-primary" style="width:100%;" onclick="closeModal(); document.getElementById('quick-admission').scrollIntoView({behavior:'smooth'});">
@@ -398,7 +385,7 @@ function openVideoModal(studentName, rankTitle) {
 
   modalBody.innerHTML = `
     <div>
-      <div style="position:relative; width:100%; height:320px; background:#000; border-radius:14px; overflow:hidden; margin-bottom:1rem; display:flex; align-items:center; justify-content:center;">
+      <div style="position:relative; width:100%; height:320px; background:#0F172A; border-radius:14px; overflow:hidden; margin-bottom:1rem; display:flex; align-items:center; justify-content:center;">
         <div style="text-align:center;">
           <i class="fas fa-play-circle" style="font-size:4rem; color:var(--accent-cyan); cursor:pointer;" onclick="showToast('▶ Playing student video review...')"></i>
           <p style="color:#FFF; margin-top:0.5rem; font-size:0.9rem;">Click to play video interview</p>
@@ -425,20 +412,20 @@ function openAdminModal() {
       <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1.5rem;">Backend portal view preview for Academy Directors & Management Staff.</p>
       
       <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin-bottom:1.5rem;">
-        <div style="background:var(--bg-glass); border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
-          <span style="font-size:0.75rem; color:var(--text-muted); uppercase">Total Enrolled Students</span>
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Total Enrolled Students</span>
           <div style="font-size:1.5rem; font-weight:800; color:var(--accent-cyan);">1,280</div>
         </div>
-        <div style="background:var(--bg-glass); border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
-          <span style="font-size:0.75rem; color:var(--text-muted); uppercase">Pending Lead Enquiries</span>
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Pending Lead Enquiries</span>
           <div style="font-size:1.5rem; font-weight:800; color:var(--accent-amber);">48</div>
         </div>
-        <div style="background:var(--bg-glass); border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
-          <span style="font-size:0.75rem; color:var(--text-muted); uppercase">Fee Collections (This Month)</span>
-          <div style="font-size:1.5rem; font-weight:800; color:#10B981;">₹24,50,000</div>
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Fee Collections (This Month)</span>
+          <div style="font-size:1.5rem; font-weight:800; color:#059669;">₹24,50,000</div>
         </div>
-        <div style="background:var(--bg-glass); border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
-          <span style="font-size:0.75rem; color:var(--text-muted); uppercase">Faculty Active Roster</span>
+        <div style="background:#F8FAFC; border:1px solid var(--border-color); padding:1rem; border-radius:10px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Faculty Active Roster</span>
           <div style="font-size:1.5rem; font-weight:800; color:var(--accent-blue);">32 Teachers</div>
         </div>
       </div>
